@@ -13,3 +13,18 @@ class EditForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['bio','profile_pic']
+
+class HoodForm(forms.ModelForm):
+    class Meta:
+        model = Neighbourhood
+        exclude = ['admin']
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        exclude = ['user', 'neighbourhood']
+
+class BusinessForm(forms.ModelForm):
+    class Meta:
+            model = Business
+            exclude = ['neighbourhood', 'profile']
