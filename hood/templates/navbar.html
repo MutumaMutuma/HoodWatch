@@ -1,4 +1,4 @@
-<nav style="background-color: rgb(5, 119, 100);" class="sticky-top navbar navbar-expand-lg navbar-light ">
+<nav style="background-color: rgb(47, 31, 61)" class="sticky-top navbar navbar-expand-lg navbar-light ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -6,23 +6,19 @@
   
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><i class="large material-icons">home</i></a>
-        </li>
+
         <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="{% url 'maps'%}"><i style="color:gold; font-size: 45px;" class=" material-icons">public</i></a> 
+
         </li>
       </ul>
       {% if user.is_authenticated %}
       {% if request.user.profile.profile_pic %}
       <section> <img style="border-radius: 50% ; padding: 0.15rem;   background: linear-gradient(to right bottom, #2cd8a4, #2ec97b);" class=" img-circle"
-      src="{{request.user.profile.profile_pic.url}}" alt="" width="50px" height="50px"">  </section> <br>
+      src="{{request.user.profile.profile_pic.url}}" alt="" width="70px" height="70px">  </section> <br>
   {% else %}
       <img style="border-radius: 50% ; padding: 0.15rem;  background: linear-gradient(to right bottom, #2cd88888, #2ec96970);" class=" img-circle"
-      src="https://www.bristolbrewing.com/wp-content/uploads/2017/08/default-avatar.png" alt="" width="50px" height="50px""> </section> <br>
+      src="https://www.bristolbrewing.com/wp-content/uploads/2017/08/default-avatar.png" alt="" width="70px" height="70px"> </section> <br>
       
       {% endif %}
           
