@@ -109,19 +109,6 @@ EMAIL_HOST_USER = config('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'hoodwatch',
-#         'USER': 'zamzam',
-#     'PASSWORD':'Ilovememore100',
-#     }
-# }
-
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
